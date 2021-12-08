@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="style.css">
+  <!--FOLHA DE ESTILO APENAS DA NAVBAR-->
+  <link rel="stylesheet" href="style1.css">
+  <!--FOLHA DE ESTILO DA PÁGINA-->
+  <link rel="stylesheet" href="Modal-Style.css">
+  <!--FOLHA DE ESTILO DO MODAL-->
+  <link rel="stylesheet" href="Menu-Filtro.css">
+  <!--FOLHA DE ESTILO DO MODAL-->
+  <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+  <section class="home-section">
+    <div class="header-section">
+      <img src="a.png" class="logo">
+      <div class="text">Dashboard</div>
+      <div>
+        <input type="text" id="pesquisa" class="Campo-Pesquisa" placeholder="Pesquisar">
+      </div>
+    </div>
+    <div class="Body-home">
+      <div class="informacoes-section">
+        cards
+      </div>
+      <div class="Informacoes-filtro">
+        <div class="Menu-filtros">
+          <div class="Btn-fechado">
+            <div class="Btn-filtros">
+              <div class="logo_name">Filtros</div>
+              <i class='bx bx-filter-alt' id="btn"></i>
+
+              <div class="filtros-section">
+                <div>
+                  <select name="select" class="Select-Style">
+                    <option value="valor1">Valor 1</option>
+                    <option value="valor2" selected>Valor 2</option>
+                    <option value="valor3">Valor 3</option>
+                  </select>
+                </div>
+                <div>
+                  <select name="select" class="Select-Style">
+                    <option value="valor1">Valor 1</option>
+                    <option value="valor2" selected>Valor 2</option>
+                    <option value="valor3">Valor 3</option>
+                  </select>
+                </div>
+                <div>
+                  <select name="select" class="Select-Style">
+                    <option value="valor1">Valor 1</option>
+                    <option value="valor2" selected>Valor 2</option>
+                    <option value="valor3">Valor 3</option>
+                  </select>
+                </div>
+                <div>
+                  <select name="select" class="Select-Style">
+                    <option value="valor1">Valor 1</option>
+                    <option value="valor2" selected>Valor 2</option>
+                    <option value="valor3">Valor 3</option>
+                  </select>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+          
+        </div>
+        <div class="Btn-Modal">
+          <button onclick="openModal()">Open modal</button>
+        </div>
+      </div>
+      <div class="tabela-section">
+
+      </div>
+    </div>
+  </section>
+
+  <!--MODAL MALUCO-->
+  <div class="modal">
+    <div class="modal-overlay" id="overlay">
+      <div class="modal" id="modal">
+        <div class="modal-header">Cadastro de Turma</div>
+
+        <!-- BODY DO MODAL -->
+        <div class="modal-body">
+          <form>
+            <fieldset class="Quadro-Campos">
+              <div>
+
+                <label for="Turma" class="Titulo-Campo">Turma:</label><br />
+
+                <input type="text" id="Turma" class="Campo" placeholder="Ex: Autoplay" required />
+              </div>
+              <div>
+                <label for="Ano" class="Titulo-Campo">Ano:</label><br />
+                <input type="month" id="Ano" class="Campo" required />
+              </div>
+            </fieldset>
+            <fieldset class="Quadro-Campos-Inferior">
+              <div>
+                <label for="Setor" class="Titulo-Campo">Setor:</label><br />
+                <div class="Campo-seletor" required>
+                  <select name="select" id="Setor">
+                    <option value="valor1">Operacional</option>
+                    <option value="valor2" selected>Lider</option>
+                    <option value="valor3">Ead/Ti</option>
+                    <option value="valor3">Administrativo</option>
+                    <option value="valor3">Outros</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <label for="Quantidade" class="Titulo-Campo">N° de Alunos:</label><br />
+                <input type="number" id="Quantidade" class="Campo" placeholder="Ex: 40 (Alunos)" required />
+              </div>
+            </fieldset>
+
+
+            <!-- FOOTER DO MODAL -->
+            <div class="modal-overlay" id="overlay">
+              <div class="modal" id="modal">
+                <div class="modal-header">Cadastro de Turma</div>
+
+                <!-- BODY DO MODAL -->
+                <div class="modal-body">
+                  <form>
+                    <fieldset class="Quadro-Campos">
+                      <div>
+
+                        <label for="Turma" class="Titulo-Campo">Turma:</label><br />
+
+                        <input type="text" id="Turma" class="Campo" placeholder="Ex: Autoplay" required />
+                      </div>
+                      <div>
+                        <label for="Ano" class="Titulo-Campo">Ano:</label><br />
+                        <input type="month" id="Ano" class="Campo" required />
+                      </div>
+                    </fieldset>
+                    <fieldset class="Quadro-Campos-Inferior">
+                      <div>
+                        <label for="Setor" class="Titulo-Campo">Setor:</label><br />
+                        <div class="Campo-seletor" required>
+                          <select name="select" id="Setor">
+                            <option value="valor1">Operacional</option>
+                            <option value="valor2" selected>Lider</option>
+                            <option value="valor3">Ead/Ti</option>
+                            <option value="valor3">Administrativo</option>
+                            <option value="valor3">Outros</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div>
+                        <label for="Quantidade" class="Titulo-Campo">N° de Alunos:</label><br />
+                        <input type="number" id="Quantidade" class="Campo" placeholder="Ex: 40 (Alunos)" required />
+                      </div>
+                    </fieldset>
+
+
+                    <!-- FOOTER DO MODAL -->
+                </div>
+                <div class="modal-footer">
+                  <div class="Campos-footer">
+                    <div>
+                      <button onclick="closeModal()" class="Botao-Cancelar">Cancelar</button>
+                    </div>
+                    <div>
+                      <input type="submit" class="Botao-Enviar" value="Enviar" onclick="Confirmacao()">
+                    </div>
+                  </div>
+                </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="teste.js">
+
+  </script>
+</body>
+
+</html>

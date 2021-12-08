@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.Menu-filtros {
+  height: 50px;
+  width: 150px;
+  background: #11101d;
+  padding: 0px 14px;
+  z-index: 99;
+  transition: all 0.5s ease;
+  border-radius: 25px;
+}
+.Menu-filtros.open {
+  width: 80%;
+}
+.Menu-filtros .Btn-filtros {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.Menu-filtros .Btn-filtros .icon {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+.Menu-filtros .Btn-filtros .logo_name {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+.Menu-filtros.open .Btn-filtros .logo_name {
+  opacity: 0;
+}
+.Menu-filtros.open .Btn-filtros .icon {
+  opacity: 1;
+}
+.Menu-filtros .Btn-filtros #btn {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: all 0.4s ease;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.Menu-filtros.open .Btn-filtros #btn {
+  text-align: right;
+}
+.Menu-filtros i {
+  color: #fff;
+  height: 60px;
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+}
+.Menu-filtros .nav-list {
+  margin-top: 20px;
+  height: 100%;
+}
+
+
+.Menu-filtros input {
+  opacity: 0;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  width: 50px;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.5s ease;
+  background: #1d1b31;
+}
+.Menu-filtros.open input {
+  opacity: 1;
+  padding: 0 20px 0 50px;
+  width: 100%;
+  height: 35px;
+}
+.Menu-filtros select {
+  visibility: hidden;
+  background: white;
+  min-width: 150px;
+  height: 35px;
+  font-size: 18px;
+  border-radius: 3px;
+  border: 0.5px #dbdbdb4f solid;
+  padding-left: 20px;
+  font-weight: 500;
+  box-shadow: #8686862b 0.1em 0.1em 0.2em;
+}
+.Menu-filtros.open select {
+  visibility: visible;
+  opacity: 1;
+  padding: 0 20px 0 50px;
+  width: 100%;
+}
+
+.filtros-section {
+  display: flex;
+  width: 80%;
+  margin: 0;
+}
