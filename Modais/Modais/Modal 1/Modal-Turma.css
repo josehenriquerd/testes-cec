@@ -1,0 +1,192 @@
+/*Estilização do fundo e do Modal*/
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.342);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.modal {
+  margin: 1rem;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  min-height: 400px;
+  background-color: white;
+  border-radius: 2px;
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  -webkit-animation: scale-in-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: scale-in-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@media only screen and (max-width: 600px) {
+  .modal {
+    height: 50%;
+    width: 100vw;
+  }
+}
+/*Estilização do Modal e suas 3 regiões primárias*/
+.modal-header {
+  background-color: #183884;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+}
+.modal-body {
+  padding: 0.5rem 1rem;
+  flex: 1;
+}
+.modal-footer {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.041);
+}
+/*Animação de abertura do modal*/
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/*Estilização dos campos e dos titulos*/
+fieldset {
+  display: flex;
+  border: 0;
+  justify-content: space-between;
+  max-width: 700px;
+  min-width: auto;
+  max-height: 500px;
+  min-height: auto;
+
+  margin: 0px auto;
+}
+
+.Titulo-Campo {
+  font-size: 22px;
+  font-weight: 600;
+  color: rgb(29, 29, 29);
+}
+
+.Campo {
+  font-weight: 300;
+  margin-top: 18px;
+  border: rgba(121, 121, 121, 0.87) 0.2px solid;
+  font-size: 16px;
+  color: rgba(70, 70, 70, 0.685);
+  width: 300px;
+  height: 35px;
+  padding-left: 20px;
+  border-radius: 2px;
+  background-color: rgb(243, 243, 243);
+}
+
+.Campo-seletor {
+  width: 300px;
+  overflow: hidden;
+}
+.Campo-seletor select {
+  font-weight: 300;
+  margin-top: 18px;
+  border: rgba(121, 121, 121, 0.87) 0.2px solid;
+  font-size: 16px;
+  color: rgba(70, 70, 70, 0.685);
+  width: 300px;
+  height: 35px;
+  padding-left: 20px;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: rgb(243, 243, 243);
+}
+
+.Quadro-Campos-Inferior {
+  display: flex;
+  border: 0;
+  justify-content: space-between;
+  max-width: 700px;
+  min-width: auto;
+  max-height: 500px;
+  min-height: auto;
+  margin: 0px auto;
+  margin-top: 30px;
+}
+
+/*Footer(Botoes do Modal)*/
+.Campos-footer {
+  display: flex;
+
+  justify-content: space-between;
+  margin: 0px auto;
+  max-width: 500px;
+  max-height: 50px;
+}
+/*Botoes*/
+.Botao-Enviar {
+  background-color: #183884;
+  width: 200px;
+  height: 35px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  border: 0;
+  transition: all 0.2s;
+  border-radius: 2px;
+}
+.Botao-Enviar:hover {
+  background-color: #0c204e;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.Botao-Enviar:active {
+  background-color: #1c4ab6;
+}
+
+.Botao-Cancelar {
+  background-color: #202124;
+  width: 200px;
+  height: 35px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  border: 0;
+  transition: all 0.2s;
+  border-radius: 2px;
+}
+.Botao-Cancelar:hover {
+  background-color: #0f0f11;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.Botao-Cancelar:active {
+  background-color: #000000;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal outside click listener</title>
+    <link rel="stylesheet" href="Modal-Turma.css" />
+    <script src="https://kit.fontawesome.com/9102f812cf.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+      <!-- HEADER DO MODAL -->
+      <div class="modal">
+    <div class="modal-overlay" id="overlay">
+      <div class="modal" id="modal">
+        <div class="modal-header">Cadastro de Turma</div>
+
+        <!-- BODY DO MODAL -->
+        <div class="modal-body">
+          <form>
+            <fieldset class="Quadro-Campos">
+              <div>
+                
+                <label for="Turma" class="Titulo-Campo">Turma:</label><br />
+                
+                <input type="text" id="Turma" class="Campo" placeholder="Ex: Autoplay" required/>
+              </div>
+              <div>
+                <label for="Ano" class="Titulo-Campo">Ano:</label><br />
+                <input type="month" id="Ano" class="Campo" required />
+              </div>
+            </fieldset>
+            <fieldset class="Quadro-Campos-Inferior">
+                <div>
+                  <label for="Setor" class="Titulo-Campo">Setor:</label><br />
+                  <div class="Campo-seletor" required>
+                    <select name="select" id="Setor" >
+                    <option value="valor1">Operacional</option>
+                    <option value="valor2" selected>Lider</option>
+                    <option value="valor3">Ead/Ti</option>
+                    <option value="valor3">Administrativo</option>
+                    <option value="valor3">Outros</option>
+                  </select>
+                </div>
+                </div>
+                <div>
+                  <label for="Quantidade" class="Titulo-Campo">N° de Alunos:</label><br />
+                  <input type="number" id="Quantidade" class="Campo" placeholder="Ex: 40 (Alunos)" required/>
+                </div>
+              </fieldset>
+
+
+          <!-- FOOTER DO MODAL -->
+        </div>
+        <div class="modal-footer">
+          <div class="Campos-footer">
+          <div>
+            <button onclick="closeModal()" class="Botao-Cancelar">Cancelar</button>
+          </div>    
+          <div>
+              <input type="submit" class="Botao-Enviar" value="Enviar" onclick="Confirmacao()">
+          </div>
+         </div>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+    <button onclick="openModal()">Open modal</button>
+
+    <script src="Modal-Turma.js"></script>
+  </body>
+</html>
