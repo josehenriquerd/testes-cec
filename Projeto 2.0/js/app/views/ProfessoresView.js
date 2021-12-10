@@ -4,9 +4,16 @@ class ProfessoresView extends View {
 
         super(elemento);
     }
+    numeroTotal(model){
+        return`
+         <p>${
+            model.professores.reduce(total => total += 1, 0)
+         }</p>
+        `
+    }
 
     template(model) {
-        return `<table class="tabela-professores">
+        return `<table>
             <thead>
                 <tr>
                     <th>Nome</th>

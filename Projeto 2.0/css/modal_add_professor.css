@@ -84,6 +84,9 @@ form p{
     margin: 5px;
     flex-direction: column;
 }
+.boxCredenciais #cargo, #area, #apelido, #contato{
+    width: 150px;
+}
 #boxNomeCompleto{
     padding-top: 25px;
 }

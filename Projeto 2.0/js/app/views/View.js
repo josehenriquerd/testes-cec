@@ -13,5 +13,6 @@ class View {
     update(model) {
 
         this._elemento.innerHTML = this.template(model);
+        // this._elemento.innerHTML = this.numeroTotal(model);
     }
 }

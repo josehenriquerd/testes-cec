@@ -66,16 +66,7 @@ header div li:hover{
     transition: all 0.5s ease;  
     z-index: 2; */
 
-.home-section{
-    position: relative;
-    background-color: pink;
-    min-height: 100vh;
-    top: 0;
-    left: 78px;
-    width: calc(100% - 78px);
-    transition: all 0.5s ease;
-    z-index: 2;
-}
+
 
 .cabecario{
     height: 80px;
@@ -83,7 +74,8 @@ header div li:hover{
     display: flex;
     align-items: center;
     /* border-bottom: 1px solid #cccccc; */
-    background-color: white;
+    background-color: rgb(5, 12, 102);
+    color: white;
     border-end-end-radius: 50px ;
 }
 .cabecario p{
@@ -105,7 +97,7 @@ header div li:hover{
     font-family: 'Calibri';
     font-size: 16px;
 }
-.cabecariosecundario{
+/* .body-second-section{
     margin-top: 20px;
     height: 50px;
     width: 100%;
@@ -114,21 +106,21 @@ header div li:hover{
     display: flex;
     border-bottom: 1px solid #cccccc;
     justify-content: center;
-}
+} */
 
-section .cabecariosecundario input{
+section .body-second-section input{
     height: 37px;
     width: 152px;
-    background-color: #008000;
+    background-color: green;
     color: white;
     font-size: 16px;
     border: none;
-    border-radius: 5px;
+    border-radius: 2px;
     cursor: pointer;
     margin-left: 49px;
 }
-section .cabecariosecundario input:hover{
-    background-color: green;
+section .body-second-section input:hover{
+    background-color: rgb(1, 112, 1);
 }
 .cabecarioatributos{
     background: #F6F6F6;
@@ -198,41 +190,203 @@ table, th, td{
     border-collapse: separate;
     border-spacing:0 10px;
 }
-tbody>tr>:nth-child(1){
+/* tbody>tr>:nth-child(1){
     border-radius: 10px 0px 0px 10px;
 }
 tbody>tr>:nth-child(3){
     border-radius: 0px 10px 10px 0px;
+} */
+.home-section{
+    position: relative;
+    background-color: rgb(249 249 249);
+    min-height: 100vh;
+    top: 0;
+    left: 78px;
+    width: calc(100% - 78px);
+    transition: all 0.5s ease;
+    z-index: 2;
 }
 .body-section{
     /* display: flex;
     justify-content: center; */
-    margin: 35px;
+    margin: 15px;
     max-width: 1393px;
-    height: 900px;
-    border: solid;
-    background-color: rgb(228, 228, 228);
-    border-radius: 5px;
-    padding: 20px;
+    min-height: 520px;
+    max-height: auto;
+    background-color: rgb(255, 255, 255);
+    /* border: solid; */
+    /* background-color: rgb(219, 219, 219); */
+    border-radius: 15px;
+    padding: 10px;
 }
 .body-first-section{
+    padding: 5px;
     display: flex;
-    border: solid;
-    height:70px;
-    margin-bottom: 10px;
+    justify-content: space-around;
+    /* border: solid; */
+    height:90px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+    
+    border-radius: 5px;
 }
 .body-second-section{
     display: flex;
     align-items:center;
     height: 50px;
-    border: solid;
     margin-bottom: 10px;
+    
+    border-radius: 5px;
     
 }
 .body-third-section{
-    border: solid;
-    height: 200px;
+    min-height: 100px;
+    border-radius: 5px;
+    max-height: auto;
+    background-color: rgb(248, 248, 248);
+    
 }
 .contador-professores{
-
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 12px 12px 12px 12px ;
+    border:none;
+    background-color: #fa782cec;
+    /* border-left: 10px solid green; */
+    /* border-bottom: 0.2px solid rgb(207, 205, 205);
+    border-right: 0.2px solid rgb(207, 205, 205);
+    border-top: 0.2px solid rgb(207, 205, 205); */
+    min-width: 220px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+.contador-professores-2{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 12px 12px 12px 12px ;
+    border:none;
+    background-color: #2cfaabec;
+    /* border-left: 10px solid green; */
+    /* border-bottom: 0.2px solid rgb(207, 205, 205);
+    border-right: 0.2px solid rgb(207, 205, 205);
+    border-top: 0.2px solid rgb(207, 205, 205); */
+    min-width: 220px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.contador-professores-3{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 12px 12px 12px 12px ;
+    border:none;
+    background-color: #2c3afaec;
+    /* border-left: 10px solid green; */
+    /* border-bottom: 0.2px solid rgb(207, 205, 205);
+    border-right: 0.2px solid rgb(207, 205, 205);
+    border-top: 0.2px solid rgb(207, 205, 205); */
+    min-width: 220px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.contador-professores-4{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 12px 12px 12px 12px ;
+    border:none;
+    background-color: #fa2cdeec;
+    /* border-left: 10px solid green; */
+    /* border-bottom: 0.2px solid rgb(207, 205, 205);
+    border-right: 0.2px solid rgb(207, 205, 205);
+    border-top: 0.2px solid rgb(207, 205, 205); */
+    min-width: 220px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.fundo-icone1{
+    display: flex;
+    background-color: #ff8349;
+    border-radius: 145%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.fundo-icone2{
+    display: flex;
+    background-color: #40eeb4;
+    border-radius: 145%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.fundo-icone3{
+    display: flex;
+    background-color: #302dd4;
+    border-radius: 145%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.fundo-icone4{
+    display: flex;
+    background-color: #ce1ea8;
+    border-radius: 145%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.icone-contadores{
+    margin: 5px;
+    min-width: 20px;
+}
+.texto-contador{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.texto-superior{
+    color: #f3f3f3;
+    font-size: 20px;
+    font-weight:400;
+   margin-right: 10px;
+    
+}
+.numero-contador{
+    color: rgb(255, 255, 255);
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.342);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    }
+    .card-completo{
+        display: flex;
+        justify-content: space-around;
+    }

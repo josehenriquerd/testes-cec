@@ -11,6 +11,7 @@ class ProfessorController {
         this._inputEmail = $('#email');
         this._listaProfessores = new ListaProfessores();
         this._professoresView = new ProfessoresView($('#professoresView'));
+        // this._professoresView = new ProfessoresView($('#numero-tot'));
         this._professoresView.update(this._listaProfessores);
         this._mensagem = new Mensagem();
         this._mensagemView = new MensagemView($('#mensagemView'));
@@ -22,7 +23,7 @@ class ProfessorController {
         this._listaProfessores.adiciona(this._criarProfessor());
         this._professoresView.update(this._listaProfessores);
 
-        this._mensagem.texto = 'Professor cadastrado com sucesso'
+        this._mensagem.texto = 'Professor cadastrado com sucesso!'
         this._mensagemView.update(this._mensagem);
         this._limpaFormulario();
         
